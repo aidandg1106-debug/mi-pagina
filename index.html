@@ -9,13 +9,23 @@
   <h1>Bienvenido a mi página</h1>
   <p>Este es un ejemplo de HTML con CSS.</p>
 
-  <!-- BOTÓN (opcional, no hace nada por ahora) -->
-  <button>
-    Haz clic aquí
-  </button>
+  <!-- IMAGEN -->
+  <img id="miImagen" src="IMG_3993.jpeg" 
+       style="margin-top:10px; width:200px; cursor:pointer;"
+       onclick="agrandarImagen()">
 
-  <!-- IMAGEN VISIBLE -->
-  <img src="IMG_3993.jpeg" style="margin-top:10px; width:200px;">
+  <!-- SCRIPT -->
+  <script>
+    function agrandarImagen() {
+      var img = document.getElementById("miImagen");
+
+      if (img.style.width === "200px") {
+        img.style.width = "400px"; // tamaño grande
+      } else {
+        img.style.width = "200px"; // tamaño normal
+      }
+    }
+  </script>
 
 </body>
 </html>
