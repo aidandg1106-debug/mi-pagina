@@ -9,25 +9,13 @@
   <h1>Bienvenido a mi página</h1>
   <p>Este es un ejemplo de HTML con CSS.</p>
 
-  <!-- BOTÓN -->
-  <button onclick="mostrarImagen()">
+  <!-- BOTÓN (opcional, no hace nada por ahora) -->
+  <button>
     Haz clic aquí
   </button>
 
-  <!-- IMAGEN (visible) -->
-  <img id="miImagen" src="IMG_3993.jpeg" style="display:none; margin-top:10px; width:200px;">
-
-  <!-- SCRIPT -->
-  <script>
-    function mostrarImagen() {
-      var img = document.getElementById("miImagen");
-      if (img.style.display === "none") {
-        img.style.display = "block";
-      } else {
-        img.style.display = "none";
-      }
-    }
-  </script>
+  <!-- IMAGEN VISIBLE -->
+  <img src="IMG_3993.jpeg" style="margin-top:10px; width:200px;">
 
 </body>
 </html>
