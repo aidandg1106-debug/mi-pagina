@@ -15,12 +15,17 @@
   </button>
 
   <!-- IMAGEN (OCULTA) -->
-  <img id="miImagen" src="https://via.placeholder.com/200" style="display:none; margin-top:10px;">
+  <img id="miImagen" src="IMG_3993.jpeg" style="display:none; margin-top:10px; width:200px;">
 
   <!-- SCRIPT -->
   <script>
     function mostrarImagen() {
-      document.getElementById("miImagen").style.display = "block";
+      var img = document.getElementById("miImagen");
+      if (img.style.display === "none") {
+        img.style.display = "block";
+      } else {
+        img.style.display = "none";
+      }
     }
   </script>
 
